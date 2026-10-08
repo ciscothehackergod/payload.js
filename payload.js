@@ -1,6 +1,6 @@
 document.open();
 document.write(`
-```html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -243,5 +243,5 @@ document.write(`
 
 </body>
 </html>
-```
+
 document.close();
