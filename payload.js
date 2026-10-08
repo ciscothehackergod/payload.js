@@ -7,7 +7,7 @@ document.write(`
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Security Researcher - Subdomain Takeover PoC</title>
+    <title>HI, NASA HACKED BY MUHAMMAD MURTAZA</title>
 
     <style>
         * {
@@ -185,7 +185,7 @@ document.write(`
             root@security-research:~$ ./poc.sh
         </div>
 
-        <h1>SUBDOMAIN TAKEOVER</h1>
+        <h1>ETHICAL HACKER Muhammad Murtaza</h1>
 
         <p class="white">
             [<span class="green">+</span>] Security Research PoC initialized
@@ -196,7 +196,7 @@ document.write(`
         </p>
 
         <p class="white">
-            [<span class="green">+</span>] Vulnerability: Subdomain Takeover
+            [<span class="green">+</span>] Vulnerability: Executing client side script in user browser
         </p>
 
         <p class="white">
